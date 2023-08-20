@@ -1,19 +1,22 @@
-name: When a push occurs in the master branch, a private message is sent on the Whatsapp.
+name: Notifier
+
 on:
   push:
-    branches: 
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
 jobs:
-  build:
+
+  messageWhatsApp:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: install twilio
-        run: pip install twilio
-      - name: run code
-        run: python main.py
+      - uses: actions/checkout@master
+      - name: Notification WhatsApp
+        id: whatsapp-notify
         env:
-          account_sid: ${{ secrets.ACCOUNT_SID }}
-          auth_token: ${{ secrets.AUTH_TOKEN }}
-          to_whatsapp_no: ${{ secrets.TO_WHATSAPP_NO }}
-          from_whatsapp_no: ${{ secrets.FROM_WHATSAPP_NO }}
+          account_sid: ${{ secrets.account_sid }}
+          auth_token: ${{ secrets.auth_token }}
+          to_whatsapp_no: ${{ secrets.to_whatsapp_no }}
+          message: "CI 👉🏻 Se ha hecho un PR en este repositorio"
+        uses: khaled-ibtikar/whatsapp-push-notify-action@master
