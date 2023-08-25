@@ -17,18 +17,28 @@
    </button>
 
    <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
-      <div class="h-full px-3 py-4 overflow-y-auto bg-white">
+      <div class=" px-3 py-4  bg-white">
          <x-logo />
-         <ul class="space-y-2 font-medium">
-            <x-menuItem title="Dashboard" />
-            <x-menuItem title="Bank Account" />
-            <x-menuItem title="Categories" />
-            <x-menuItem title="Incomes" />
-            <x-menuItem title="Expenses" />
+         <ul class="space-y-2 font-medium mt-8">
+            <x-menuItem title="Dashboard">
+               <ion-icon name="grid-outline"></ion-icon>
+            </x-menuItem>
+            <x-menuItem title="Bank accounts">
+               <ion-icon name="card-outline"></ion-icon>
+            </x-menuItem>
+            <x-menuItem title="Categories">
+               <ion-icon name="pricetags-outline"></ion-icon>
+            </x-menuItem>
+            <x-menuItem title="Expenses">
+               <ion-icon name="exit-outline" class="rotate-180"></ion-icon>
+            </x-menuItem>
+            <x-menuItem title="Incomes">
+               <ion-icon name="exit-outline"></ion-icon>
+            </x-menuItem>
          </ul>
       </div>
    </aside>
-   <div class="p-4 sm:ml-64">
+   <div class="p-4 sm:ml-64 bg-[#F6F6F6]">
       <h1 class="text-decoration-color: #000;">Dashboard</h1>
 
       <div class="max-w-sm p-5 bg-white border border-gray-200 rounded-lg shadow fucsia-400 dark:border-gray-700 whitespace-normal ">
@@ -43,5 +53,6 @@
       </div>
    </div>
 </body>
-
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
