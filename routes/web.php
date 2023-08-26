@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('app');
 });
 
-<<<<<<< HEAD
+
 Route::get('dashboard', function () {
     return view('Dashboard/dashboard');
 });
@@ -27,4 +27,6 @@ Route::get('login', function () {
     return view('auth/login');
 });
 
->>>>>>> main
+Route::get('userRegistre', function () {
+    return view('auth/userRegistre');
+});
