@@ -8,11 +8,11 @@
     <title>Login</title>
 </head>
 <body>
-        <div class="flex justify-around w-full">
-            <div class= " w-1/2 gap-7 flex flex-col p-9">
+        <div class="flex justify-around  w-full h-[100vh]" >
+            <div class= "w-[50%] gap-7 flex flex-col p-10">
 
-                <div class="flex justify-normal ">
-                <img class="" src="{{URL::asset('images/Logo.svg')}}" alt="logo">
+                <div>
+                <img src="{{URL::asset('images/Logo.svg')}}" alt="logo">
                 </div>
 
                 <div class="flex flex-col gap-2 ">
@@ -48,8 +48,8 @@
 
             </div>
 
-            <div class=" flex justify-center items-center w-1/2  bg-[#F8F8F8] pr-2">
-                <img class="w-11/12 h-[100vh]" src="{{URL::asset('images/undraw.svg')}}"alt="">
+            <div class="w-[50%] flex justify-center items-center bg-[#F8F8F8]">
+                <img class="w-5/6  h-5/6 " src="{{URL::asset('images/undraw.svg')}}"alt="">
             </div>
 
             
