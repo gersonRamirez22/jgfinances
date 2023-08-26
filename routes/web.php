@@ -21,3 +21,6 @@ Route::get('login', function () {
     return view('auth/login');
 });
 
+Route::get('userRegistre', function () {
+    return view('auth/userRegistre');
+});

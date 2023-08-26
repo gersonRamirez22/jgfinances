@@ -49,7 +49,7 @@
             </div>
 
             <div class="w-[50%] flex justify-center items-center bg-[#F8F8F8]">
-                <img class="w-5/6  h-5/6 " src="{{URL::asset('images/undraw.svg')}}"alt="">
+                <img class="w-5/6 h-5/6 " src="{{URL::asset('images/undraw.svg')}}"alt="">
             </div>
 
             
