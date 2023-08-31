@@ -16,7 +16,7 @@
                 <x-logo/>
             </div>
             <div class="pt-2">
-                <h1 class="font-sans text-3xl">Login to you account</h1>
+                <h1 class="font-sans text-3xl">Login to your account</h1>
                 <p class="font-sans text-base text-gray-500">Please enter your details to acess your account.</p>
             </div>
             <div>
