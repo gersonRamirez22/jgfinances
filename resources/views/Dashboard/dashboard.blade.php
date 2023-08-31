@@ -44,30 +44,18 @@
       <div class="text-[#242A31] text-2xl font-semibold p-3">
          <h1>Dashboard</h1>
       </div>
-      <div>
-       <x-Carbalance/>
+      
+      <div class="flex ">
+         <div>
+           <x-card-balance cardTitle='Total Balance' amount='$103.120,23' />
+         </div>
+
+         <div class=" flex gap-7 items-center justify-center  right-16  "> 
+          <x-action actionName="Create Income"/>
+          <x-action actionName="Create Expense"/>
+          <x-action actionName="Add Category"/>
+         </div> 
       </div>
-
-      <div class=" font-medium  flex  items-center content-center gap-8 p" style="width: 597px;">
-   
-         <div class="text-sm items-center flex" >
-            <ion-icon class=" " name="add-circle-outline"></ion-icon>
-            <p >Create Icome</p>
-         </div>
-
-         <div class="text-sm items-center flex ">
-            <ion-icon class="" name="add-circle-outline"></ion-icon>
-            <p >Create Expense</p>
-         </div>
-
-         <div class="text-sm items-center flex " >
-            <ion-icon class="" name="add-circle-outline"></ion-icon>
-            <p>Add Category</p>
-         </div>
-
-      </div>
-
-
 
    </div> 
 
