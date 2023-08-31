@@ -18,6 +18,15 @@ Route::get('/', function () {
     return view('app');
 });
 
+
 Route::get('dashboard', function () {
     return view('Dashboard/dashboard');
+});
+
+Route::get('login', function () {
+    return view('auth/login');
+});
+
+Route::get('register', function () {
+    return view('auth/register');
 });

@@ -24,4 +24,7 @@ class menuItem extends Component
     {
         return view('components.menu-item');
     }
+    
+
 }
+
