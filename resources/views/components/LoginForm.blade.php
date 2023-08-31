@@ -13,7 +13,7 @@
       <label class="text-gray-400  text-base " for="">Remember me</label>
     </div>
     <div>
-      <p class="text-purple-600 text-base">Forgot you password</p>
+      <a href="#" class="text-purple-600 text-base">Forgot you password</a>
     </div>
   </div>
 </form>

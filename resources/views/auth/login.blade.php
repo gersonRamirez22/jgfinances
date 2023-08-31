@@ -13,10 +13,10 @@
     <div class="grid items-center md:grid-cols-2 h-[100vh]">
         <div class="p-10">
             <div class="pb-10">
-                <x-logo />
+                <x-logo/>
             </div>
-            <div class="space-y-2">
-                <h1 class="font-sans text-3xl">Login to you account</h1>
+            <div class="pt-2">
+                <h1 class="font-sans text-3xl">Login to your account</h1>
                 <p class="font-sans text-base text-gray-500">Please enter your details to acess your account.</p>
             </div>
             <div>
@@ -27,10 +27,7 @@
                 <p>Not a member? <a class="text-purple-600" href="auth/loginRegistre">Sign up now</a></p>
             </div>
         </div>
-
-        <div class="grid bg-[#F8F8F8] justify-center items-center h-full">
-            <img class="w-full" src="{{URL::asset('images/undraw.svg')}}" alt="banner">
-        </div>
+        <x-bannerImage/>
     </div>
 </body>
 
