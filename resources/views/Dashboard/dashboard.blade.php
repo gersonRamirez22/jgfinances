@@ -19,7 +19,7 @@
    <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
       <div class=" px-3 py-4  bg-white">
          <x-logo />
-         <ul class="space-y-2 font-medium mt-8">
+         <ul class="space-y-2 font-medium mt-5">
             <x-menuItem title="Dashboard">
                <ion-icon name="grid-outline"></ion-icon>
             </x-menuItem>
@@ -40,27 +40,33 @@
    </aside>
    
 
-   <div class=" font-radio-canada p-6 sm:ml-64 bg-[#F6F6F6]">
+   <div class=" font-radio-canada p-6 ml-64 bg-[#F6F6F6] h-[100vh]">
       <div class="text-[#242A31] text-2xl font-semibold p-3">
          <h1>Dashboard</h1>
       </div>
       
-      <div class="flex ">
-         <div>
+      <div class="flex mt-5">
+         <div class="mr-10 ml-[14px]">
            <x-card-balance cardTitle='Total Balance' amount='$103.120,23' />
          </div>
+         <div>
+          <div class="flex gap-7 "> 
+             <x-action actionName="Create Income"/>
+             <x-action actionName="Create Expense"/>
+             <x-action actionName="Add Category"/>
+          </div> 
 
-         <div class=" flex gap-7 items-center justify-center  right-16  "> 
-          <x-action actionName="Create Income"/>
-          <x-action actionName="Create Expense"/>
-          <x-action actionName="Add Category"/>
-         </div> 
+           <div class=" flex gap-7 mt-12">
+            <x-card-total titleName="Create Icome" totalAccount="$20.110,13"/>
+            <x-card-total titleName="Create Expense" totalAccount="$5.100,03"/>
+            <x-card-total titleName="Total Profit" totalAccount="$15.010,1"/> 
+           </div>
+         </div>
       </div>
-
-   </div> 
-
-
-   
+      <div class="p-2.5 ml-1.5 mt-4">
+         <h1 class="text-3xl font-semibold">All Transactions</h1>
+      </div>
+   </div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
