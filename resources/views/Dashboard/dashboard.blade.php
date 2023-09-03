@@ -40,32 +40,53 @@
    </aside>
    
 
-   <div class=" font-radio-canada p-6 ml-64 bg-[#F6F6F6] h-[100vh]">
-      <div class="text-[#242A31] text-2xl font-semibold p-3">
-         <h1>Dashboard</h1>
-      </div>
-      
-      <div class="flex mt-5">
-         <div class="mr-10 ml-[14px]">
-           <x-card-balance cardTitle='Total Balance' amount='$103.120,23' />
+   <div class=" font-radio-canada p-6 ml-64 bg-[#F6F6F6] ">
+         <div class="text-[#242A31] text-2xl font-semibold p-3">
+            <h1>Dashboard</h1>
          </div>
-         <div>
-          <div class="flex gap-7 "> 
-             <x-action actionName="Create Income"/>
-             <x-action actionName="Create Expense"/>
-             <x-action actionName="Add Category"/>
-          </div> 
+      
+       <div class="flex mt-5">
+          <div class="mr-10 ml-[14px]">
+           <x-card-balance cardTitle='Total Balance' amount='$103.120,23' />
+          </div>
+          <div>
+            <div class="flex gap-7 "> 
+               <x-action actionName="Create Income"/>
+               <x-action actionName="Create Expense"/>
+               <x-action actionName="Add Category"/>
+            </div> 
 
            <div class=" flex gap-7 mt-12">
-            <x-card-total titleName="Create Icome" totalAccount="$20.110,13"/>
-            <x-card-total titleName="Create Expense" totalAccount="$5.100,03"/>
-            <x-card-total titleName="Total Profit" totalAccount="$15.010,1"/> 
+             <x-card-total titleName="Total Icome" totalAccount="$20.110,13"/>
+             <x-card-total titleName="Total Expence" totalAccount="$5.100,03"/>
+             <x-card-total titleName="Total Profit" totalAccount="$15.010,1"/> 
+            </div>
+          </div>
+          </div>
+           <div class=" ml-[14px] mt-8">
+               <h1 class="text-3xl font-semibold">All Transactions</h1>
            </div>
-         </div>
-      </div>
-      <div class="p-2.5 ml-1.5 mt-4">
-         <h1 class="text-3xl font-semibold">All Transactions</h1>
-      </div>
+          
+            <div class="flex mt-6  gap-9">
+               <div class=" flex bg-[#FFF] rounded-lg w-[440px]  py-2.5 px-4 gap-2.5 justify-between items-center  ml-[14px]">
+                  <input class="text-sm  text-[#898B92]" type="texto" placeholder="Search">
+                  <ion-icon class="h-5 w-5 text-[#898B92]" name="search"></ion-icon>
+                </div>
+                <div class=" flex bg-[#FFF] rounded-lg   py-2.5 px-3 gap-2.5 justify-between items-center   ">
+                  <p class="text-sm text-[#898B92]">Filter</p>
+                  <ion-icon class="h-5 w-5 text-[#898B92]"  name="menu"></ion-icon>
+               </div>
+            </div> 
+            <div class="bg-[#FFF] h-[213px] rounded-lg w-[558px] ml-[14px] mt-6">
+               <x-table-heading/>
+               <x-table-heading/>
+               <x-table-heading/>
+               <x-table-heading/>
+               <x-table-heading/>
+               
+            </div>
+       </div>
+     
    </div>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
