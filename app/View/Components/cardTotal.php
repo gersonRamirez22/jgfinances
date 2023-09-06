@@ -8,14 +8,14 @@ use Illuminate\View\Component;
 
 class cardTotal extends Component
 { 
-    public $titleName, $totalAccount;
+    public $cardName, $totalAccount;
 
     /**
      * Create a new component instance.
      */
-    public function __construct($titleName = '', $totalAccount = '')
+    public function __construct($cardName = '', $totalAccount = '')
     {
-        $this-> titleName = $titleName; 
+        $this-> cardName = $cardName; 
         $this-> totalAccount = $totalAccount;
     }
 

@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class tableHeading extends Component
+class transactionTable extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class tableHeading extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.table-heading');
+        return view('components.transaction-table');
     }
 }

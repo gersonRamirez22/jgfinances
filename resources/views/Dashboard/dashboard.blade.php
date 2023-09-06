@@ -57,9 +57,9 @@
             </div> 
 
            <div class=" flex gap-7 mt-12">
-             <x-card-total titleName="Total Icome" totalAccount="$20.110,13"/>
-             <x-card-total titleName="Total Expence" totalAccount="$5.100,03"/>
-             <x-card-total titleName="Total Profit" totalAccount="$15.010,1"/> 
+             <x-card-total cardName="Total Icome" totalAccount="$20.110,13"/>
+             <x-card-total cardName="Total Expence" totalAccount="$5.100,03"/>
+             <x-card-total cardName="Total Profit" totalAccount="$15.010,1"/> 
             </div>
           </div>
           </div>
@@ -77,15 +77,12 @@
                   <ion-icon class="h-5 w-5 text-[#898B92]"  name="menu"></ion-icon>
                </div>
             </div> 
-            <div class="bg-[#FFF] h-[213px] rounded-lg w-[558px] ml-[14px] mt-6">
-               <x-table-heading/>
-               <x-table-heading/>
-               <x-table-heading/>
-               <x-table-heading/>
-               <x-table-heading/>
+            <div>
+               <x-transaction-table/> 
                
             </div>
        </div>
+
      
    </div>
 </body>
