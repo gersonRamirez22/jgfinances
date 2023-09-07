@@ -24,9 +24,9 @@
                 <p>Already a member? <a  href="#" class=" font-medium text-[#754EFF]">Log in</a></p>
             </div>
             <div>
-                <x-RegisterForm />
+                <x-RegisterForm/>
             </div>
-            <x-Button />
+            <x-button buttonTitle="Sign Up"/>
         </div>
         <x-bannerImage/>
     </div>

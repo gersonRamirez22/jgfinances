@@ -22,7 +22,7 @@
             <div>
                 <x-LoginForm />
             </div>
-            <x-Button />
+            <x-button buttonTitle="Sign In"/>
             <div>
                 <p>Not a member? <a class="text-purple-600" href="auth/loginRegistre">Sign up now</a></p>
             </div>
