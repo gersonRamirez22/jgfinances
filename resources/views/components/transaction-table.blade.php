@@ -14,7 +14,11 @@
                 <th class="px-2.5 py-2 font-regular">Actions</th>    
          </tr>
      </thead>
-     <tbody class="text-center flex-shrink">
-        <x-transactionitem date="mkemkr"/>
-    </tbody> 
-   </table>
+     <tbody class="text-center flex-shrink flex-col">
+         <x-transactionitem date="22.08.23" transactionsType="Income" amount="+$5.000" account="Acount 1" category="Salary"/>
+         <x-transactionitem date="22.08.23" transactionsType="Expense" amount="-$2.000" account="Acount 3" category="Netflix"/>
+         <x-transactionitem date="22.08.23" transactionsType="Expense" amount="-$4.000" account="Acount 1" category="Spotify"/>
+         <x-transactionitem date="22.08.23" transactionsType="Income" amount="+$6.000" account="Acount 2" category="Salary"/>
+         <x-transactionitem date="22.08.23" transactionsType="Income" amount="+$5.000" account="Acount 2" category="Salary"/>
+     </tbody> 
+</table>

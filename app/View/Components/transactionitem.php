@@ -8,13 +8,17 @@ use Illuminate\View\Component;
 
 class transactionitem extends Component
 {
-    public $date;
+    public $date, $transactionsType, $amount, $account, $category;   
     /**
      * Create a new component instance.
      */
-    public function __construct($date)
+    public function __construct($date="", $transactionsType="", $amount="", $account="", $category="")
     {
        $this->date = $date;
+       $this->transactionsType = $transactionsType;
+       $this->amount = $amount;
+       $this->account = $account;
+       $this->category = $category;
     }
 
     /**
