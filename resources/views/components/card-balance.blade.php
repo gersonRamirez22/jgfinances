@@ -1,4 +1,4 @@
-<div class="  flex flex-col rounded-xl bg-[#FFF] w-52 h-72 py-6 px-4 gap-4">
+<div class="  flex flex-col rounded-xl bg-[#FFF] w-52 h-[270px] py-6 px-4 gap-4">
     <div class=" flex flex-col gap-y-2">
         <p class="text-[#D0D0D0] text-sm font-normal">{{$cardTitle}}</p>
         <p class="text-xl font-medium gap-y-2">{{$amount}}</p>
