@@ -1,3 +1,3 @@
 <a href="#">
-    <img src="{{URL::asset('images/logo.svg')}}"/>
+  <img src="{{ URL::asset('images/logo.svg') }}" />
 </a>
