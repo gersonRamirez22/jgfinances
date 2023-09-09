@@ -50,14 +50,14 @@
             <div class="mr-10 ml-[14px]">
                 <x-card-balance cardTitle='Total Balance' amount='$103.120,23' />
             </div>
-            <div class="flex flex-col justify-between">
-                <div class="flex gap-7 ">
+            <div class="flex flex-col justify-between w-full">
+                <div class="flex gap-7 justify-evenly">
                     <x-action actionName="Create Income" />
                     <x-action actionName="Create Expense" />
                     <x-action actionName="Add Category" />
                 </div>
 
-                <div class="flex gap-7">
+                <div class="flex gap-7 justify-evenly">
                     <x-card-total cardName="Total Icome" totalAccount="$20.110,13" />
                     <x-card-total cardName="Total Expence" totalAccount="$5.100,03" />
                     <x-card-total cardName="Total Profit" totalAccount="$15.010,1" />
